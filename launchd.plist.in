@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.teamn4c.sg-2026-0032.template</string>
+  <key>ProgramArguments</key>
+  <array><string>/usr/bin/false</string></array>
+  <key>WorkingDirectory</key><string>/tmp</string>
+  <key>EnvironmentVariables</key>
+  <dict><key>N4C_MAPPING_XML</key><string>/tmp/RFC2307.xml</string></dict>
+  <key>RunAtLoad</key><true/>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>/tmp/sg-2026-0032.out</string>
+  <key>StandardErrorPath</key><string>/tmp/sg-2026-0032.err</string>
+  <key>Sockets</key>
+  <dict>
+    <key>LDAPListener</key>
+    <dict>
+      <key>SockNodeName</key><string>127.0.0.1</string>
+      <key>SockServiceName</key><string>389</string>
+      <key>SockFamily</key><string>IPv4</string>
+      <key>SockType</key><string>stream</string>
+      <key>SockProtocol</key><string>TCP</string>
+      <key>SockPassive</key><true/>
+    </dict>
+  </dict>
+</dict>
+</plist>
